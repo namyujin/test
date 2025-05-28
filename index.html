@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>당신의 다음 영화는?</title>
+    <link rel="stylesheet" href="style/index.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #111;
+        color: #fff;
+      }
+
+      nav.navbar {
+        background-color: #4bf177;
+        padding: 10px 20px;
+        box-shadow: 0 4px 10px #4bf177;
+      }
+
+      nav.navbar a {
+        color: #000;
+        text-decoration: none;
+        margin-right: 20px;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      .navbar a:hover {
+        color: #fff;
+      }
+      .main-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .main-title {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        color: #ff5145;
+      }
+
+      .main-desc {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        color: #ddd;
+      }
+
+      .go-btn {
+        padding: 12px 24px;
+        font-size: 1rem;
+        background-color: #ff8c8c;
+        color: #000;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .go-btn:hover {
+        background-color: #ff3e30;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html">홈</a>
+      <a href="movie.html">인기 영화 목록</a>
+    </nav>
+
+    <section class="main-section">
+      <h1 class="main-title">당신의 다음 영화는?</h1>
+      <p class="main-desc">
+        전 세계 인기 영화부터, 지금 놓치면 안 될 명작까지.<br />
+        감성적인 영화 탐험을 지금 시작하세요.
+      </p>
+      <a href="movie.html">
+        <button class="go-btn">인기 영화 보러가기</button>
+      </a>
+    </section>
+  </body>
+</html>
